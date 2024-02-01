@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Own Questions</title>
+ <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+  <form id="questionForm">
+    <label for="question">Question:</label>
+    <input type="text" id="question" name="question" required>
+    
+    <div class="options-container">
+      <label>Options:</label>
+      <div id="options">
+        <div class="option">
+          <input type="text" name="option[]" required>
+        </div>
+      </div>
+      <button type="button" id="addOptionBtn">Add Option</button>
+      <button type="button" id="removeOptionBtn">Remove Option</button>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="./index.js" charset="UTF-8"></script>
+
+</body>
+</html>
